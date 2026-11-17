@@ -10,7 +10,7 @@ Necesitas PHP 8.5 (con la extensión `pdo_mysql`) y MySQL 8 en marcha.
 2. Desde la carpeta del proyecto, crea la base de datos con datos de ejemplo:
    `php database/instalar.php`
 3. Arranca el servidor de PHP, que solo publica la carpeta `public/`:
-   `php -S localhost:8000 -t public`
+   `php -S localhost:3306 -t public`
 4. Abre http://localhost:3306
 
 ## Usuarios de prueba
@@ -53,7 +53,7 @@ public/           lo único accesible desde el navegador
 
 ## Uso de herramientas de IA
 
-(Escribe aquí la verdad: para qué has usado IA y qué has hecho tú. Ejemplo: «He usado Claude para generar una primera versión del código. Después lo he leído, probado y sé explicar cada parte en la defensa».)
+Utilizacion de la IA para acelerar el proyecto y explicacion de codigo para poder facilitar y entender progama
 
 ## Etiquetas Git
 
