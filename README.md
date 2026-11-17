@@ -53,7 +53,7 @@ public/           lo único accesible desde el navegador
 
 ## Uso de herramientas de IA
 
-Durante este proyecto para acelerar el proceso hemos utilizado IA como variante para acelerar el trabajo y explicaciones de codigo
+(Escribe aquí la verdad: para qué has usado IA y qué has hecho tú. Ejemplo: «He usado Claude para generar una primera versión del código. Después lo he leído, probado y sé explicar cada parte en la defensa».)
 
 ## Etiquetas Git
 
