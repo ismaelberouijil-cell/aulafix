@@ -1,0 +1,50 @@
+/* Estilos de AulaFix. Los estados se expresan con clases CSS, nunca con estilos en línea. */
+:root { --azul:#1f4e79; --gris:#f3f4f6; --rojo:#b3261e; --verde:#2e7d32; --naranja:#b26a00; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, sans-serif; line-height:1.5; color:#1b1b1b; }
+main { max-width: 1000px; margin: 0 auto; padding: 1rem; }
+
+/* Barra superior */
+.barra { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:.6rem 1rem; background:var(--azul); color:#fff; flex-wrap:wrap; }
+.barra a, .barra .usuario { color:#fff; margin-right:.8rem; }
+.marca { font-weight:700; font-size:1.2rem; text-decoration:none; }
+.en-linea { display:inline; }
+
+/* Formularios y botones */
+form label { display:block; margin-top:.8rem; font-weight:600; }
+form input:not([type=checkbox]):not([type=radio]), form select, form textarea { width:100%; max-width:480px; padding:.45rem; border:1px solid #888; border-radius:4px; }
+fieldset { margin-top:.8rem; border:1px solid #bbb; }
+.check { display:inline-block; font-weight:400; margin-right:1rem; }
+button, .boton { padding:.45rem .9rem; border:0; border-radius:4px; background:var(--azul); color:#fff; cursor:pointer; text-decoration:none; display:inline-block; margin-top:.8rem; }
+.barra button { margin:0; background:#fff; color:var(--azul); }
+.peligro { background:var(--rojo); }
+.error { display:block; color:var(--rojo); font-size:.9rem; }
+.ayuda { font-size:.85rem; color:#555; }
+.ayuda.excedido { color:var(--rojo); font-weight:700; }
+.flash { padding:.6rem; background:#e8f5e9; border-left:4px solid var(--verde); }
+
+/* Tabla de incidencias */
+.tabla-scroll { overflow-x:auto; }
+.tabla { width:100%; border-collapse:collapse; }
+.tabla th, .tabla td { padding:.45rem; border-bottom:1px solid #ddd; text-align:left; vertical-align:top; }
+.tabla th { background:var(--gris); }
+.orden { margin:0; padding:0; background:none; color:inherit; font-weight:700; }
+.urgente { background:#fdecea; }
+.prio-alta { color:var(--rojo); font-weight:700; }
+.prio-media { color:var(--naranja); }
+.estado-resuelta { color:var(--verde); }
+
+/* Panel: resumen, pestañas y filtros */
+.resumen { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:.8rem; margin:1rem 0; }
+.tarjeta { background:var(--gris); padding:.8rem; border-radius:6px; }
+.tarjeta-urgente { background:#fdecea; }
+.tarjeta-num { display:block; font-size:1.8rem; }
+.pestanas { display:flex; gap:.4rem; flex-wrap:wrap; }
+.pestana { background:var(--gris); color:#222; margin:0; }
+.pestana[aria-selected=true] { background:var(--azul); color:#fff; }
+.filtros { display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.8rem; }
+.filtros input, .filtros select { padding:.4rem; }
+
+/* Detalle de una incidencia */
+.detalle dt { font-weight:700; }
+.detalle dd { margin:0 0 .5rem; }
