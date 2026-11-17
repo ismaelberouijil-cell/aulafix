@@ -1,10 +1,10 @@
 # AulaFix — tablón de incidencias del aula
 
-Proyecto intermodular 0612 (cliente) + 0613 (servidor), hecho de forma individual. PHP 8.3, PDO, MySQL 8 y JavaScript en módulos, sin librerías ni frameworks.
+Proyecto intermodular 0612 (cliente) + 0613 (servidor), hecho de forma individual. PHP 8.5, PDO, MySQL 8 y JavaScript en módulos, sin librerías ni frameworks.
 
 ## Cómo arrancarlo
 
-Necesitas PHP 8.3 (con la extensión `pdo_mysql`) y MySQL 8 en marcha.
+Necesitas PHP 8.5 (con la extensión `pdo_mysql`) y MySQL 8 en marcha.
 
 1. Si tu MySQL no usa usuario `root` sin contraseña, cambia los datos de `config.php` (es el único sitio donde están).
 2. Desde la carpeta del proyecto, crea la base de datos con datos de ejemplo:
